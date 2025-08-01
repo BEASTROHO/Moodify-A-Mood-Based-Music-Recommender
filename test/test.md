@@ -1,4 +1,4 @@
-#🧪 How to Run the Tests
+🧪 How to Run the Tests
 
 ```
 python -m unittest discover -s test
