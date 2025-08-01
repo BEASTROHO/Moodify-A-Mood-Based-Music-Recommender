@@ -1,18 +1,21 @@
-# backend/mood_engine.py
+import unittest
+from backend.mood_engine import analyze_mood
 
-from textblob import TextBlob
+class TestMoodEngine(unittest.TestCase):
+    def test_happy_mood(self):
+        self.assertEqual(analyze_mood("I feel amazing and joyful!"), "Happy")
 
-def analyze_mood(text):
-    blob = TextBlob(text)
-    polarity = blob.sentiment.polarity
+    def test_content_mood(self):
+        self.assertEqual(analyze_mood("I'm doing okay today."), "Content")
 
-    if polarity > 0.5:
-        return "Happy"
-    elif polarity > 0.1:
-        return "Content"
-    elif polarity < -0.5:
-        return "Sad"
-    elif polarity < -0.1:
-        return "Melancholy"
-    else:
-        return "Neutral"
+    def test_neutral_mood(self):
+        self.assertEqual(analyze_mood("It is a regular day."), "Neutral")
+
+    def test_melancholy_mood(self):
+        self.assertEqual(analyze_mood("I'm a bit down and tired."), "Melancholy")
+
+    def test_sad_mood(self):
+        self.assertEqual(analyze_mood("I feel terrible and hopeless."), "Sad")
+
+if __name__ == '__main__':
+    unittest.main()
