@@ -69,17 +69,21 @@ curl -X POST http://127.0.0.1:5000/analyze \
 
 ## 📁 Project Structure
 
-```text
 Moodify/
+├── frontend/
+│   ├── index.html           # UI for mood input
+│   ├── style.css            # Styling for the frontend
+│   └── app.js               # JS logic to call backend API
+│
 ├── backend/
 │   ├── app.py               # Flask API server
 │   └── mood_engine.py       # Sentiment analysis logic
+│
 ├── test/
-│   └── test_mood_engine.py  # Unit tests for mood analysis
+│   └── test_mood_engine.py  # Unit tests for mood classification
+│
 ├── requirements.txt         # Python dependencies
-├── LICENSE                  # MIT License
-├── README.md                # Project documentation
-```
+└── README.md                # Project documentation
 
 
 ---
