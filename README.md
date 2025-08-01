@@ -66,9 +66,9 @@ curl -X POST http://127.0.0.1:5000/analyze \
 ```
 
 ---
-
+'''
 ## 📁 Project Structure
-
+```
 Moodify/
 ├── frontend/
 │   ├── index.html           # UI for mood input
@@ -84,8 +84,7 @@ Moodify/
 │
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
-
-
+```
 ---
 
 
