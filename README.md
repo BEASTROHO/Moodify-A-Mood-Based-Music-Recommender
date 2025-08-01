@@ -67,6 +67,26 @@ curl -X POST http://127.0.0.1:5000/analyze \
 
 ---
 
+## 📁 Project Structure
+
+```text
+Moodify/
+├── backend/
+│   ├── app.py               # Flask API server
+│   └── mood_engine.py       # Sentiment analysis logic
+├── test/
+│   └── test_mood_engine.py  # Unit tests for mood analysis
+├── requirements.txt         # Python dependencies
+├── LICENSE                  # MIT License
+├── README.md                # Project documentation
+```
+
+
+---
+
+
+---
+
 ## 🧭 Roadmap
 
 - [ ] 🎨 React frontend
@@ -103,6 +123,4 @@ THE SOFTWARE.
 
 ---
 
-You can now paste this directly into your GitHub README editor [here](https://github.com/BEASTROHO/Moodify-A-Mood-Based-Music-Recommender/edit/main/README.md).
 
-Want a `.gitignore` next or a mock playlist recommender based on the mood output?
